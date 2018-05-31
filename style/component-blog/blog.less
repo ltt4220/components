@@ -1,0 +1,255 @@
+@import '../base/base.less';
+@363:#363636;
+/****blog in seting***/
+.zm-dialog-pageBox {
+    width: 286px;
+    height: 524px;
+    border:1px solid @baseColor;
+    position: relative;
+    .zm-dialog-pageList {
+        margin: 0;
+        padding: 0;
+        li {
+            width: 286px;
+            height: 40px;
+            line-height: 40px;
+            list-style: none;
+            position: relative;
+            border-bottom: 1px solid @gray3;
+            cursor: pointer;
+            span {
+              display: none;
+            }
+            .zm-dialog-serialNumber {
+                float: left;
+                line-height: 36px;
+                font-style: italic;
+                margin-left: 10px;
+                width: 14px;
+                display: block;
+            }
+            .zm-dialog-pageList-title {
+                float: left;
+                height: 26px;
+                line-height: 26px;
+                margin: 6px 15px 0 10px;
+                padding-left: 5px;
+                width: 176px;
+                text-overflow: ellipsis;
+                border-radius: 3px;
+                background-color: transparent;
+                border: 1px solid transparent;
+                cursor: pointer;
+                outline:none;
+                color: @black;
+            }
+            .onFocus {
+              border: 1px solid @baseColor;
+              box-shadow: 0 0 5px @baseColor;
+            }
+            .onError {
+                box-shadow: 0 0 5px @f60;
+                border: 1px solid @f60;
+            }
+            .zm-dialog-eye {
+                font-size: 12px;
+                color:@baseColor;
+                float: left;
+                line-height: 37px;
+            }
+            .zm-dialog-setting {
+              color:@baseColor;
+              font-size: 18px;
+              float: left;
+              line-height: 37px;
+              margin-left: 7px;
+            }
+            .icon-cha2{
+              font-size: 18px;
+            }
+            .icon-eyeOff{
+              font-size: 18.66px;
+              color:@gray3;
+            }
+            .icon-duigou1, .icon-cha2{
+              color: @baseColorLight2;
+            }
+            .icon-duigou1:hover, .icon-cha2:hover{
+              color: @baseColor;
+            }
+            span.setKey {
+                 color: @baseColor;
+            }
+            .zm-dialog-nameError{
+                height: 13px;
+                width: 13px;
+                display: block;
+                position: relative;
+                top: 12px;
+                right: 77px;
+                svg{
+                    fill: @f60;
+                    position: absolute;
+                }
+                }
+                .zm-dialog-nameErrorText{
+                width: 223px;
+                height: 30px;
+                line-height: 30px;
+                padding-left: 8px;
+                background-color: @fdc;
+                color: @fontColor;
+                font-size: 12px;
+                position: absolute;
+                left: 1px;
+                top: 36px;
+                border: 1px solid @f60;
+                border-radius: 2px;
+                z-index: 35;
+                }
+                .zm-dialog-nameErrorText:before{
+                content: '';
+                display: block;
+                width:0;
+                height: 0;
+                box-sizing: border-box;
+                border-left: 9px solid transparent;
+                border-right: 9px solid transparent;
+                border-bottom: 9px solid @fdc;
+                position: absolute;
+                top:-9px;
+                right: 11px;
+                z-index: 33;
+                }
+                .zm-dialog-nameErrorText:after{
+                content: '';
+                display: block;
+                width:0;
+                height: 0;
+                box-sizing: border-box;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-bottom: 10px solid @f60;
+                position: absolute;
+                top: -10px;
+                right: 10px;
+                }
+                .zm-dialog-renameError{
+                width: 84px;
+                height: 30px;
+                line-height: 30px;
+                padding-left: 8px;
+                background-color: @fdc;
+                color: @fontColor;
+                font-size: 12px;
+                position: absolute;
+                left: 184px;
+                top: 36px;
+                border: 1px solid @f60;
+                border-radius: 2px;
+                z-index: 35;
+                }
+                .zm-dialog-renameError:before{
+                content: '';
+                display: block;
+                width:0;
+                height: 0;
+                box-sizing: border-box;
+                border-left: 9px solid transparent;
+                border-right: 9px solid transparent;
+                border-bottom: 9px solid @fdc;
+                position: absolute;
+                top:-9px;
+                right: 53px;
+                z-index: 33;
+                }
+                .zm-dialog-renameError:after{
+                content: '';
+                display: block;
+                width:0;
+                height: 0;
+                box-sizing: border-box;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-bottom: 10px solid @f60;
+                position: absolute;
+                top: -10px;
+                right: 52px;
+                }
+            .zm-dialog-carousel-onePageShow {
+                svg {
+                    fill: @baseColorLight2;
+                }
+            }
+        }
+        .onlay {
+            background-color: @baseColorLight4;
+            span {
+                display: block;
+            }
+        }
+        .wrong {
+            span {
+              display: block;
+            }
+        }
+        .onlayclick {
+            background-color: @baseColorLight3;
+            span {
+                display: block;
+            }
+        }
+    }
+}
+//选择博客设置;
+.zm-dialog-check {
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid @gray3;
+    padding-top: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px @blackOpa2;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background: linear-gradient(@white, @gray4);
+    text-align: center;
+    cursor: pointer;
+    .zm-dialog-check-button {
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 3px;
+        color: @white;
+        background-color: @baseColor;
+    }
+}
+.zm-dialog-check-button:hover{
+    cursor:pointer;
+}
+.zm-dialog-carousel-pageSetBox {
+position: absolute;
+box-shadow: 0 0 5px @gray3;
+width: 176px;
+left: 305px;
+border-radius: 5px;
+    > div {
+        width: 100%;
+        height: 30px;
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 30px;
+        padding-left: 30px;
+        background-color: @white;
+        cursor: pointer;
+    }
+    > div:hover{
+      background-color: @baseColorLight4;
+    }
+    > div:nth-child(1) {
+        border-radius: 5px 5px 0 0;
+    }
+    > div:last-child {
+        border-radius: 0 0 5px 5px;
+    }
+}

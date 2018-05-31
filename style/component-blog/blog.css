@@ -1,0 +1,254 @@
+/*   主色系   */
+/*  主色透明*/
+/*   常用基础色   */
+/****blog in seting***/
+.zm-dialog-pageBox {
+  width: 286px;
+  height: 524px;
+  border: 1px solid #3089d5;
+  position: relative;
+}
+.zm-dialog-pageBox .zm-dialog-pageList {
+  margin: 0;
+  padding: 0;
+}
+
+.zm-dialog-pageBox .zm-dialog-pageList li {
+  width: 286px;
+  height: 40px;
+  line-height: 40px;
+  list-style: none;
+  position: relative;
+  border-bottom: 1px solid #d7d7d7;
+  cursor: pointer;
+}
+.zm-dialog-pageBox .zm-dialog-pageList li span {
+  display: none;
+}
+.zm-dialog-pageBox .zm-dialog-pageList li .zm-dialog-serialNumber {
+  float: left;
+  line-height: 36px;
+  font-style: italic;
+  margin-left: 10px;
+  width: 14px;
+  display: block;
+}
+.zm-dialog-pageBox .zm-dialog-pageList li .zm-dialog-pageList-title {
+  float: left;
+  height: 26px;
+  line-height: 26px;
+  margin: 6px 15px 0 10px;
+  padding-left: 5px;
+  width: 176px;
+  text-overflow: ellipsis;
+  border-radius: 3px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  outline: none;
+  color: #000;
+}
+.zm-dialog-pageBox .zm-dialog-pageList li .onFocus {
+  border: 1px solid #3089d5;
+  box-shadow: 0 0 5px #3089d5;
+}
+.zm-dialog-pageBox .zm-dialog-pageList li .onError {
+  box-shadow: 0 0 5px #f60;
+  border: 1px solid #f60;
+}
+.zm-dialog-pageBox .zm-dialog-pageList li .zm-dialog-eye {
+  font-size: 12px;
+  color: #3089d5;
+  float: left;
+  line-height: 37px;
+}
+.zm-dialog-pageBox .zm-dialog-pageList li .zm-dialog-setting {
+  color: #3089d5;
+  font-size: 18px;
+  float: left;
+  line-height: 37px;
+  margin-left: 7px;
+}
+.zm-dialog-pageBox .zm-dialog-pageList li .icon-cha2 {
+  font-size: 18px;
+}
+.zm-dialog-pageBox .zm-dialog-pageList li .icon-eyeOff {
+  font-size: 18.66px;
+  color: #d7d7d7;
+}
+.zm-dialog-pageBox .zm-dialog-pageList li .icon-duigou1,
+.zm-dialog-pageBox .zm-dialog-pageList li .icon-cha2 {
+  color: #83b8e6;
+}
+.zm-dialog-pageBox .zm-dialog-pageList li .icon-duigou1:hover,
+.zm-dialog-pageBox .zm-dialog-pageList li .icon-cha2:hover {
+  color: #3089d5;
+}
+.zm-dialog-pageBox .zm-dialog-pageList li span.setKey {
+  color: #3089d5;
+}
+.zm-dialog-pageBox .zm-dialog-pageList li .zm-dialog-nameError {
+  height: 13px;
+  width: 13px;
+  display: block;
+  position: relative;
+  top: 12px;
+  right: 77px;
+}
+.zm-dialog-pageBox .zm-dialog-pageList li .zm-dialog-nameError svg {
+  fill: #f60;
+  position: absolute;
+}
+.zm-dialog-pageBox .zm-dialog-pageList li .zm-dialog-nameErrorText {
+  width: 223px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 8px;
+  background-color: #ffd1c2;
+  color: #0e293f;
+  font-size: 12px;
+  position: absolute;
+  left: 1px;
+  top: 36px;
+  border: 1px solid #f60;
+  border-radius: 2px;
+  z-index: 35;
+}
+.zm-dialog-pageBox .zm-dialog-pageList li .zm-dialog-nameErrorText:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  box-sizing: border-box;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #ffd1c2;
+  position: absolute;
+  top: -9px;
+  right: 11px;
+  z-index: 33;
+}
+.zm-dialog-pageBox .zm-dialog-pageList li .zm-dialog-nameErrorText:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  box-sizing: border-box;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #f60;
+  position: absolute;
+  top: -10px;
+  right: 10px;
+}
+.zm-dialog-pageBox .zm-dialog-pageList li .zm-dialog-renameError {
+  width: 84px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 8px;
+  background-color: #ffd1c2;
+  color: #0e293f;
+  font-size: 12px;
+  position: absolute;
+  left: 184px;
+  top: 36px;
+  border: 1px solid #f60;
+  border-radius: 2px;
+  z-index: 35;
+}
+.zm-dialog-pageBox .zm-dialog-pageList li .zm-dialog-renameError:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  box-sizing: border-box;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #ffd1c2;
+  position: absolute;
+  top: -9px;
+  right: 53px;
+  z-index: 33;
+}
+.zm-dialog-pageBox .zm-dialog-pageList li .zm-dialog-renameError:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  box-sizing: border-box;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #f60;
+  position: absolute;
+  top: -10px;
+  right: 52px;
+}
+.zm-dialog-pageBox .zm-dialog-pageList li .zm-dialog-carousel-onePageShow svg {
+  fill: #83b8e6;
+}
+.zm-dialog-pageBox .zm-dialog-pageList .onlay {
+  background-color: #d6e7f7;
+}
+.zm-dialog-pageBox .zm-dialog-pageList .onlay span {
+  display: block;
+}
+.zm-dialog-pageBox .zm-dialog-pageList .wrong span {
+  display: block;
+}
+.zm-dialog-pageBox .zm-dialog-pageList .onlayclick {
+  background-color: #97c4ea;
+}
+.zm-dialog-pageBox .zm-dialog-pageList .onlayclick span {
+  display: block;
+}
+.zm-dialog-check {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid #d7d7d7;
+  padding-top: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: linear-gradient(#fff, #f2f2f2);
+  text-align: center;
+  cursor: pointer;
+}
+.zm-dialog-check .zm-dialog-check-button {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #3089d5;
+}
+.zm-dialog-check-button:hover {
+  cursor: pointer;
+}
+.zm-dialog-carousel-pageSetBox {
+  position: absolute;
+  box-shadow: 0 0 5px #d7d7d7;
+  width: 176px;
+  left: 305px;
+  border-radius: 5px;
+}
+.zm-dialog-carousel-pageSetBox > div {
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 30px;
+  padding-left: 30px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.zm-dialog-carousel-pageSetBox > div:hover {
+  background-color: #d6e7f7;
+}
+.zm-dialog-carousel-pageSetBox > div:nth-child(1) {
+  border-radius: 5px 5px 0 0;
+}
+.zm-dialog-carousel-pageSetBox > div:last-child {
+  border-radius: 0 0 5px 5px;
+}

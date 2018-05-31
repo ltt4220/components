@@ -1,0 +1,348 @@
+@import '../../../../style/base/base.less';
+@363:#363636;
+/****blog in seting***/
+//blog管理排序方式设置;
+
+
+div.zm-blog-content{
+    position: relative;
+    .zm-dialog-sortord {
+        width:286px;
+        box-sizing: border-box;
+        padding: 0 15px;
+        min-height: 55px;
+        font-size: 14px;
+        position: relative;
+        .zm-dialog-Icon-title {
+            width: 65px;
+            text-align: left;
+            margin: 0;
+            vertical-align: middle;
+            padding-right: 9px;
+            display: inline-block;
+            line-height: 55px;
+        }
+        .zm-dialog-Icon {
+            position: relative;
+            box-sizing: border-box;
+            float: right;
+            top: 10px;
+            padding: 0 15px;
+            width: 176px;
+            height: 30px;
+            line-height: 28px;
+            border-radius: 3px;
+            border: 1px solid @gray3;
+            outline: none;
+            cursor: pointer;
+            vertical-align: middle;
+            span.number {
+                color: @black;
+            }
+            .icon_triangle {
+                font-style: normal;
+                float: right;
+                color: @gray3;
+            }
+        }
+        .zmicon_hover {
+            border: 1px solid @baseColor;
+            box-shadow: 0 0 5px @baseColor;
+            span.number{
+                color: @baseColor;
+            }
+            .icon_triangle {
+                color: @baseColor;
+            }
+        }
+        ul.zm-dialog-random {
+            position: absolute;
+            top: 44px;
+            left: 96px;
+            z-index: 1000;
+            box-sizing: border-box;
+            width: 175px;
+            background: @white;
+            color: @363;
+            box-shadow: 0 0 5px @gray3;
+            border-radius: 3px;
+            margin:0;
+            padding: 0;
+            li {
+                list-style: none;
+                height: 30px;
+                line-height: 30px;
+                padding: 0 15px;
+                span {
+                    color: @baseColor;
+                }
+            }
+            li:hover {
+                background-color: @baseColorLight4;
+            }
+        }
+    }
+    //blog管理内容ul,li设置;
+    .zm-dialog-pageBox {
+        width: 286px;
+        height: 580px;
+        position: relative;
+        .easy-scrollbar__wrap, .easy-scrollbar__wrap--hidden-default {
+            height: 598px;
+          }
+        .zm-dialog-pageList {
+            margin: 0;
+            padding: 0;
+            border-top:1px solid @gray3;
+            li {
+                width: 286px;
+                height: 40px;
+                line-height: 40px;
+                list-style: none;
+                position: relative;
+                border-bottom: 1px solid @gray3;
+                cursor: pointer;
+                span {
+                display: none;
+                }
+                .zm-dialog-serialNumber {
+                    float: left;
+                    line-height: 36px;
+                    font-style: italic;
+                    margin-left: 10px;
+                    width: 14px;
+                    display: block;
+                }
+                 .zm-dialog-Title{
+                    float: left;
+                    height: 26px;
+                    line-height: 26px;
+                    width: 182px;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    margin: 0 14px 0 10px;
+                    .zm-dialog-pageList-title{
+                        width: 100%;
+                        outline: none;
+                        height: 26px;
+                        line-height: 26px;
+                        box-sizing: border-box;
+                        padding:0 24px 0 6px;
+                        text-overflow: ellipsis;
+                        background-color: transparent;
+                        border: 1px solid transparent;
+                        color: @black;
+                        margin: 6px 0 0 0;
+                    }
+                    .zm-boxShow{
+                        display: inline-block;
+                        width: 185px;
+                        height: 40px;
+                        background-color: transparent;
+                        position: absolute;
+                        top: 0px;
+                        left: 30px;
+                    }
+                }
+                .onFocus {
+                border: 1px solid @baseColor;
+                box-shadow: 0 0 5px @baseColor;
+                }
+                .onError {
+                    box-shadow: 0 0 5px @f60;
+                    border: 1px solid @f60;
+                }
+                .zm-dialog-eye {
+                    font-size: 12px;
+                    color:@baseColor;
+                    float: left;
+                    line-height: 37px;
+                }
+                .zm-dialog-setting {
+                color:@baseColor;
+                font-size: 18px;
+                float: left;
+                line-height: 37px;
+                margin-left: 7px;
+                }
+                .icon-cha2{
+                font-size: 18px;
+                }
+                .icon-eyeOff{
+                font-size: 18.66px;
+                color:@gray3;
+                }
+                .icon-duigou1, .icon-cha2{
+                color: @baseColorLight2;
+                }
+                .icon-duigou1:hover,.icon-cha2:hover{
+                color: @baseColor;
+                }
+                span.setKey {
+                    color: @baseColor;
+                }
+                .zm-dialog-nameError{
+                    position: absolute;
+                    font-size: 14px;
+                    right: 76px;
+                    color: @f60;
+                }
+                .zm-dialog-nameErrorText{
+                width: 223px;
+                height: 30px;
+                line-height: 30px;
+                padding-left: 8px;
+                background-color: @fdc;
+                color: @fontColor;
+                font-size: 12px;
+                position: absolute;
+                left: 1px;
+                top: 36px;
+                border: 1px solid @f60;
+                border-radius: 2px;
+                z-index: 35;
+                }
+                .zm-dialog-nameErrorText:before{
+                content: '';
+                display: block;
+                width:0;
+                height: 0;
+                box-sizing: border-box;
+                border-left: 9px solid transparent;
+                border-right: 9px solid transparent;
+                border-bottom: 9px solid @fdc;
+                position: absolute;
+                top:-9px;
+                right: 11px;
+                z-index: 33;
+                }
+                .zm-dialog-nameErrorText:after{
+                content: '';
+                display: block;
+                width:0;
+                height: 0;
+                box-sizing: border-box;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-bottom: 10px solid @f60;
+                position: absolute;
+                top: -10px;
+                right: 10px;
+                }
+                .zm-dialog-renameError{
+                width: 84px;
+                height: 30px;
+                line-height: 30px;
+                padding-left: 8px;
+                background-color: @fdc;
+                color: @fontColor;
+                font-size: 12px;
+                position: absolute;
+                left: 182px;
+                top: 36px;
+                border: 1px solid @f60;
+                border-radius: 2px;
+                z-index: 35;
+                }
+                .zm-dialog-renameError:before{
+                content: '';
+                display: block;
+                width:0;
+                height: 0;
+                box-sizing: border-box;
+                border-left: 9px solid transparent;
+                border-right: 9px solid transparent;
+                border-bottom: 9px solid @fdc;
+                position: absolute;
+                top:-9px;
+                right: 53px;
+                z-index: 33;
+                }
+                .zm-dialog-renameError:after{
+                content: '';
+                display: block;
+                width:0;
+                height: 0;
+                box-sizing: border-box;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-bottom: 10px solid @f60;
+                position: absolute;
+                top: -10px;
+                right: 52px;
+                }
+            }
+            .onlay {
+                background-color: @baseColorLight4;
+                span {
+                    display: block;
+                }
+            }
+            .wrong {
+                span {
+                display: block;
+                }
+            }
+            .onlayclick {
+                background-color: @baseColorLight3;
+                span {
+                    display: block;
+                }
+            }
+        }
+    }
+    //选择博客设置;
+    .zm-dialog-check {
+        width: 286px;
+        height: 50px;
+        border-top: 1px solid @gray3;
+        padding-top: 10px;
+        box-sizing: border-box;
+        box-shadow: 0 0 5px @blackOpa2;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        background: linear-gradient(@white, @gray4);
+        text-align: center;
+        cursor: pointer;
+        .zm-dialog-check-button {
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 3px;
+            outline: none;
+            border: none;
+            color: @white;
+            background-color: @baseColor;
+        }
+    }
+    .zm-dialog-check-button:hover{
+        cursor:pointer;
+    }
+    .zm-dialog-carousel-pageSetBox {
+    position: absolute;
+    box-shadow: 0 0 5px @gray3;
+    width: 176px;
+    left: 305px;
+    border-radius: 5px;
+        > div {
+            width: 100%;
+            height: 30px;
+            box-sizing: border-box;
+            font-size: 14px;
+            line-height: 30px;
+            padding-left: 30px;
+            background-color: @white;
+            cursor: pointer;
+        }
+        > div:hover{
+        background-color: @baseColorLight4;
+        }
+        > div:nth-child(1) {
+            border-radius: 5px 5px 0 0;
+        }
+        > div:last-child {
+            border-radius: 0 0 5px 5px;
+        }
+    }
+}
